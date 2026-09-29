@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — AI Researcher</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <nav><a href="../">Legal home</a> · <a href="../terms/">Terms</a></nav>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <strong>Last updated:</strong> September 29, 2026 · <strong>App:</strong> AI Researcher<br />
+      <strong>Contact:</strong> support email shown in the app Settings
+    </p>
+    <p>
+      This Privacy Policy describes how the AI Researcher app (“App”, “we”, “us”) handles
+      information when you use our research and summarization features.
+    </p>
+
+    <h2>Summary</h2>
+    <ul>
+      <li>
+        <strong>On-device AI:</strong> Summaries and analysis are generated
+        <strong>on your device</strong> using a local language model. We do not receive your
+        generated reports unless you choose to share them.
+      </li>
+      <li>
+        <strong>Network use:</strong> The App may send <strong>URLs you submit</strong> and related
+        metadata to third-party services to fetch page content or video captions before local
+        analysis.
+      </li>
+      <li>
+        <strong>Local storage:</strong> Research history and settings are stored
+        <strong>on your device</strong>.
+      </li>
+      <li>
+        <strong>Ads (free tier):</strong> In the current MVP for Russia / RuStore, ads are served by
+        <strong>Yandex Mobile Ads</strong>. Advertising SDKs may collect advertising identifiers and
+        device signals as described below.
+      </li>
+      <li>
+        <strong>Analytics &amp; crashes:</strong> We use <strong>Yandex AppMetrica</strong> for
+        ad-funnel analytics (when enabled) and for <strong>crash / error reporting</strong>
+        (stack traces, device diagnostics) so we can fix stability issues.
+      </li>
+      <li>
+        <strong>Premium (early):</strong> Paid Premium, where offered, is processed via
+        <strong>web checkout (Robokassa)</strong> and a billing backend. Native store billing
+        (Google Play / Apple / RuStore Pay / RevenueCat) may be added later and is not required for
+        the current MVP.
+      </li>
+    </ul>
+
+    <h2>Information we process</h2>
+    <h3>Information you provide</h3>
+    <ul>
+      <li><strong>URLs</strong> (web pages, YouTube links, etc.) that you enter for research.</li>
+      <li>
+        <strong>Optional follow-up questions</strong> about a research report (processed on-device).
+      </li>
+      <li><strong>App settings</strong> (e.g. summary language preference), stored locally.</li>
+    </ul>
+
+    <h3>Information collected automatically</h3>
+    <ul>
+      <li>
+        <strong>Device and app diagnostics / crash reports</strong> via
+        <strong>Yandex AppMetrica Crashes</strong> (and similar OS tools): crash stack traces, error
+        messages, and basic device/app metadata. This does <strong>not</strong> include your research
+        URLs, report text, or other content you analyze.
+      </li>
+      <li>
+        <strong>Subscription / entitlement status</strong> if you purchase Premium (early: Robokassa
+        + billing backend; later: app stores / RevenueCat if enabled).
+      </li>
+      <li>
+        <strong>Advertising identifiers</strong> (e.g. Google Advertising ID / IDFA where applicable)
+        and related device signals when ads are shown, primarily via
+        <strong>Yandex Mobile Ads</strong>. Other networks (e.g. Google AdMob) may be added in a later
+        release and will be disclosed here before use.
+      </li>
+      <li>
+        <strong>Ads conversion analytics (when remote analytics is enabled):</strong> anonymized ad
+        funnel events (<code>ad_request</code> / fill / impression / fail) may be sent to
+        <strong>Yandex AppMetrica</strong> for Yandex ad activity.
+        <strong>Google Firebase Analytics</strong> for non-Yandex networks is
+        <strong>not</strong> used in the current MVP and may be added later if those networks ship.
+        These events do not include research URLs, report text, or other content you analyze. See also
+        in-app Settings → Privacy &amp; Ads.
+      </li>
+    </ul>
+    <p>We do <strong>not</strong> require account registration for core App features.</p>
+
+    <h2>How we use information</h2>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>URLs you submit</td><td>Fetch source text or captions for analysis</td></tr>
+        <tr>
+          <td>Source text (transient)</td>
+          <td>Input to the on-device model to produce your report</td>
+        </tr>
+        <tr><td>Research reports</td><td>Stored locally in your research history</td></tr>
+        <tr><td>Settings</td><td>Personalize language and app behavior</td></tr>
+        <tr>
+          <td>Advertising identifiers / SDK signals</td>
+          <td>Serve and measure ads (free tier); respect OS privacy / consent where required</td>
+        </tr>
+        <tr>
+          <td>AppMetrica crash / error reports</td>
+          <td>Diagnose crashes and improve App stability</td>
+        </tr>
+        <tr>
+          <td>Subscription / payment metadata</td>
+          <td>Grant and renew Premium; disable ads while Premium is active</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We do <strong>not</strong> sell your personal information.</p>
+
+    <h2>Third-party services</h2>
+    <p>The App may contact:</p>
+    <ol>
+      <li>
+        <strong>Yandex Mobile Ads</strong> — to show ads to free users (current MVP / Russia path).
+        May process advertising identifiers and related signals under Yandex policies.
+      </li>
+      <li>
+        <strong>Yandex AppMetrica</strong> — ad-funnel analytics (when enabled) and
+        <strong>crash reporting</strong> (stack traces / diagnostics). Policy:
+        <a href="https://yandex.com/legal/metrica_termsofuse/"
+          >https://yandex.com/legal/metrica_termsofuse/</a
+        >
+      </li>
+      <li>
+        <strong>YouTube caption proxy</strong> (self-hosted) — public video captions; only the video
+        URL and language preference are sent. The same proxy may forward content-extract/search
+        requests to Tavily on your behalf.
+      </li>
+      <li>
+        <strong>Tavily</strong> (or similar) — web content from URLs you provide, typically via our
+        self-hosted proxy. <a href="https://tavily.com">tavily.com</a>
+      </li>
+      <li>
+        <strong>Model CDN / model hosting</strong> — download the on-device AI model to your phone.
+      </li>
+      <li>
+        <strong>Robokassa</strong> (or similar web payment provider) — if you complete Premium
+        checkout on the web (early Premium path).
+      </li>
+      <li>
+        <strong>Billing backend</strong> (our server) — anonymous app user id, plan, and entitlement
+        expiry for web Premium.
+      </li>
+      <li>
+        <strong>May be added later (not current MVP):</strong> Google AdMob or other global ad
+        networks; Google Firebase Analytics for those networks; Google Play Billing / Apple IAP /
+        RuStore Billing / RevenueCat for store subscriptions.
+      </li>
+    </ol>
+    <p>
+      Each third party processes data under its own privacy policy. We recommend reviewing those
+      policies.
+    </p>
+
+    <h2>Ads and Premium</h2>
+    <ul>
+      <li>
+        Free users may see ads in limited placements (e.g. Home banner, research loading). Ads are not
+        shown on the model setup flow or during active on-device generation streaming.
+      </li>
+      <li>While <strong>Premium</strong> is active, ads are disabled.</li>
+      <li>
+        You can review privacy / ads settings in the App where provided (e.g. consent forms required
+        by law in your region).
+      </li>
+    </ul>
+
+    <h2>Data storage and retention</h2>
+    <ul>
+      <li>
+        <strong>On device:</strong> Research history (SQLite), preferences, downloaded AI model files,
+        cached Premium entitlement / expiry.
+      </li>
+      <li>
+        <strong>On our servers:</strong> No general user-account backend for the MVP App. Caption /
+        Tavily-proxy logs, if any, should be limited to operational troubleshooting.
+        <strong>Billing backend</strong> (web payments) may store an anonymous app user id, plan, and
+        entitlement expiry.
+      </li>
+      <li>
+        <strong>AppMetrica / advertising partners</strong> retain analytics and crash data per their
+        policies and applicable law.
+      </li>
+    </ul>
+    <p>
+      You can <strong>clear research history</strong> in App Settings. Ending Premium follows store or
+      web-provider cancel/refund rules; after expiry or revoke, ads may return.
+    </p>
+
+    <h2>Data security</h2>
+    <ul>
+      <li>Analysis runs locally after source material is fetched.</li>
+      <li>
+        API keys for third-party services are embedded in the App build or developer configuration;
+        they are not your personal credentials.
+      </li>
+      <li>HTTPS is used for remote caption and content APIs where configured.</li>
+    </ul>
+    <p>No method of transmission or storage is 100% secure.</p>
+
+    <h2>Children’s privacy</h2>
+    <p>
+      The App is not directed at children under 13. We do not knowingly collect personal information
+      from children.
+    </p>
+
+    <h2>Your rights</h2>
+    <p>
+      Depending on your region, you may have rights to access, delete, or restrict processing of
+      personal data. For requests, contact us at the support email in Settings.
+    </p>
+
+    <h2>International transfers</h2>
+    <p>Third-party providers may process data in countries other than yours.</p>
+
+    <h2>Changes</h2>
+    <p>
+      We may update this Privacy Policy. The “Last updated” date will change. Continued use of the App
+      after changes means you accept the updated policy.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this Privacy Policy: use the <strong>support email</strong> shown in the App
+      Settings screen.
+    </p>
+  </body>
+</html>

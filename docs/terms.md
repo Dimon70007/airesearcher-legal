@@ -1,13 +1,13 @@
 # Terms of Service
 
-**Last updated:** July 5, 2026  
+**Last updated:** September 29, 2026  
 **App:** AI Researcher (mobile application)
 
 Please read these Terms of Service (“Terms”) before using AI Researcher (“App”).
 
 ## Acceptance
 
-By downloading or using the App, you agree to these Terms and our [Privacy Policy](./privacy). If you do not agree, do not use the App.
+By downloading or using the App, you agree to these Terms and our [Privacy Policy](./privacy.md). If you do not agree, do not use the App.
 
 ## Description of service
 
@@ -36,7 +36,23 @@ You agree **not** to:
 
 ## Subscriptions and payments
 
-Some features may require a paid subscription via Google Play or the App Store. Payments are handled by the store provider. Refunds follow store policies. Subscription terms shown at purchase apply.
+Some features (**Premium**) may require a paid subscription.
+
+**Early / current MVP:** where Premium is offered, payment is processed via **web checkout** through a provider such as **Robokassa**, with entitlement synced to the App via our billing backend.
+
+**Later (may be added):** in-app / store billing via **Google Play**, **Apple App Store**, and/or **RuStore**, possibly with subscription infrastructure such as **RevenueCat**. Those paths are **not** part of the current MVP ship unless separately announced in-app and in these Terms.
+
+Prices, billing periods (monthly / quarterly / annual), intro offers, renewals, and taxes are shown at purchase. Refunds and cancellations follow the policies of the payment provider (and any published offer terms), plus applicable law.
+
+**Apple platforms:** In-app purchases use Apple’s IAP / StoreKit path when store billing is enabled. We do not offer an in-app web payment as a substitute for IAP unless enrolled in an Apple-allowed external-purchase program.
+
+**Restore:** Use Restore Purchases (store) or the in-app “already paid” / revalidate flow (web) in Settings when available.
+
+While Premium is active, advertising in the App is disabled subject to entitlement sync.
+
+## Advertising
+
+The free tier may display third-party ads. **Current MVP (Russia / RuStore):** primarily **Yandex Mobile Ads**. Other ad networks may be added in later releases. Ads must not mislead about App functionality. See our [Privacy Policy](./privacy.md) for advertising identifiers, analytics, and crash-reporting partners.
 
 ## Intellectual property
 
@@ -44,7 +60,7 @@ The App, branding, and software are owned by us or our licensors. Source content
 
 ## Third-party content and services
 
-The App depends on third parties (e.g. content extraction APIs, YouTube, hosting for captions). We are not responsible for their availability, accuracy, or policies. Links to third-party sites are not endorsements.
+The App depends on third parties (e.g. content extraction APIs, YouTube, hosting for captions, ad and analytics SDKs). We are not responsible for their availability, accuracy, or policies. Links to third-party sites are not endorsements.
 
 ## Disclaimer of warranties
 
